@@ -1,0 +1,4 @@
+*.pem
+*.zip
+lambda_function.py
+lambda-trust.json
