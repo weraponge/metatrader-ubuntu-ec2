@@ -166,7 +166,7 @@ Purchase via Console → Cost Management → Savings Plans:
 
 ## Step 4: Security Hardening
 
-- [ ] Change `trader` password: `ssh -i ~/mt-trader-key.pem ubuntu@<IP> 'sudo chpasswd <<< "trader:<new-password>"'`
+- [ ] Change `trader` password: `ssh -i ~/mt-trader-key.pem ubuntu@<IP> 'sudo chpasswd <<< "trader:<your-password>"'`
 - [ ] Update SG if your IP changes: `aws ec2 authorize-security-group-ingress --group-id <SG_ID> --protocol tcp --port 3389 --cidr <NEW_IP>/32`
 - [ ] Consider SSM port forwarding (no public IP needed):
   ```bash
